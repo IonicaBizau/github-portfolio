@@ -8,7 +8,8 @@
     "url": "git://github.com/IonicaBizau/github-portofolio.git"
   },
   "dependencies": {
-    "johnnys-node-static": "*"
+    "johnnys-node-static": "*",
+    "showdown"           : "*"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
