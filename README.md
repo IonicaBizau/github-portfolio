@@ -1,4 +1,4 @@
-github-portofolio
+github-portfolio
 =================
 
-A generator that generates a portofolio with your Github projects.
+A generator that generates a portfolio with your Github projects.
