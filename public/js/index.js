@@ -1,5 +1,5 @@
 $.getJSON("/getConfig", function (config) {
-    $.getJSON("https://api.github.com/users/" + config.username + "/repos?access_token=" + config.token + "&per_page=100", function (myRepos) {
+    $.getJSON("https://api.github.com/users/" + config.username + "/repos?access_token=" + config.token + "&sort=updated&per_page=100", function (myRepos) {
 
         var repos = myRepos;
         var $repos = [];
@@ -12,7 +12,7 @@ $.getJSON("/getConfig", function (config) {
             $clone.find(".repo-title").text(repos[i].name);
 
             (function (clone, name) {
-                $.getJSON("https://api.github.com/repos/" + config.username + "/" + name + "/readme?access_token=c7a3f3cdaff220271767587beb487e09cf0e0df3", function (repo) {
+                $.getJSON("https://api.github.com/repos/" + config.username + "/" + name + "/readme?access_token=" + config.token, function (repo) {
                     var markdown = Base64.decode(repo.content);
                     $.ajax({
                         // type post
@@ -39,5 +39,20 @@ $.getJSON("/getConfig", function (config) {
         }
 
         $(".repos").append($repos);
+    });
+
+    $(".container").on("click", "h1 .close", function () {
+        $(this).closest(".repo").slideUp(function () {
+            $(this).remove();
+        });
+    });
+
+    $(".btn-finish").on("click", function () {
+        $("h1 .close").fadeOut(function () {
+            $(this).remove();
+        });
+        $(this).fadeOut(function () {
+            $(this).remove();
+        });
     });
 });
