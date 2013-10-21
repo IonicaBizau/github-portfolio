@@ -1,7 +1,7 @@
-github-portfolio
+GitHub Portfolio
 =================
 
-A generator that generates a portfolio with your Github projects.
+An application that generates a portfolio with your Github projects.
 
 ## Installation
 
