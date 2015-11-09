@@ -1,7 +1,7 @@
 {
   "name": "github-portfolio",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A tool to generate a portfolio using data from your Github projects.",
   "main": "server.js",
   "repository": {
     "type": "git",
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "johnnys-node-static": "*",
-    "showdown"           : "*"
+    "showdown": "*"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
-  "license": "MIT",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "KINDLY",
   "bugs": {
     "url": "https://github.com/IonicaBizau/github-portofolio/issues"
   }
