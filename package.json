@@ -1,6 +1,6 @@
 {
   "name": "github-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A tool to generate a portfolio using data from your Github projects.",
   "main": "server.js",
   "repository": {

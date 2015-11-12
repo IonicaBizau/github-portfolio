@@ -5,7 +5,7 @@ A tool to generate a portfolio using data from your Github projects.
 ## Installation
 
 ```sh
-$ npm i -g github-portfolio
+$ npm i github-portfolio
 ```
 
 ## Documentation
