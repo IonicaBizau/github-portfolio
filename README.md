@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save github-portfolio
+# Using npm
+npm install --save github-portfolio
+
+# Using yarn
+yarn add github-portfolio
 ```
 
 
